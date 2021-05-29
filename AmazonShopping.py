@@ -59,7 +59,7 @@ def spendingtrend(orders, refunds):
     plt.title("Monthly Amazon Shopping Trends")
     plt.xlabel("Months (Year-Month)")
     plt.ylabel("Amount Spent in USD ($)")
-    #plt.figtext(1,1,spendingstats(orders, refunds))
+    # plt.figtext(1,1,spendingstats(orders, refunds))
     plt.subplots_adjust(right=.8)
     plt.text(0.8, 0.5, spendingstats(orders, refunds), fontsize=14, transform=plt.gcf().transFigure)
     plt.show()
@@ -67,7 +67,7 @@ def spendingtrend(orders, refunds):
 
 # openamazondata('/home/glencross/PythonProjects/AmazonShopping/orders_and_shipments.csv',
 # '/home/glencross/PythonProjects/AmazonShopping/refunds.csv')
-#spendingstats('/home/glencross/PythonProjects/AmazonShopping/orders_Abel.csv',
+# spendingstats('/home/glencross/PythonProjects/AmazonShopping/orders_Abel.csv',
 #              '/home/glencross/PythonProjects/AmazonShopping/refunds_Abel.csv')
 spendingtrend('/home/glencross/PythonProjects/AmazonShopping/orders_AJG.csv',
               '/home/glencross/PythonProjects/AmazonShopping/refunds_AJG.csv')
